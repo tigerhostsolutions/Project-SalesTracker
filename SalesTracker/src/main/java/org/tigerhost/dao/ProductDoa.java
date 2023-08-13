@@ -33,16 +33,17 @@ public class ProductDoa implements DoaInterface<Product> {
 	@Override
 	public void add(Product product) {
 		try (Connection conn = ConnectionUtil.getConnection()) {
-			String sql = "INSERT INTO products (product_number, product_name, product_description, product_category, product_price)"
+			String sql = "INSERT INTO products (product_number, product_name, product_description, product_category, " +
+						 "product_price)"
 					+ "VALUES (?, ?, ?, ?, ?);";
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, product.getProduct_number());
-			ps.setString(2, product.getProduct_name());
-			ps.setString(3, product.getProduct_description());
-			ps.setString(4, product.getProduct_category());
-			ps.setDouble(5, product.getProduct_price());
+			ps.setInt(1, product.product_number());
+			ps.setString(2, product.product_name());
+			ps.setString(3, product.product_description());
+			ps.setString(4, product.product_category());
+			ps.setDouble(5, product.product_price());
 			ps.executeUpdate();
-			System.out.println("New product: " + product.getProduct_name() + " added!");
+			System.out.println("New product: " + product.product_name() + " added!");
 			log.info("User added product");
 		} catch (SQLException e) {
 			System.out.println("New product not added.");

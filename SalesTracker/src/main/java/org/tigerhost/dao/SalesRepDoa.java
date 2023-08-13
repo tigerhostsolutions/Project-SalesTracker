@@ -38,13 +38,13 @@ public class SalesRepDoa implements DoaInterface<SalesRep> {
 			String sql = "INSERT INTO sales_representatives (sales_rep_id, sales_rep_first_name, sales_rep_last_name,"
 					+ "sales_rep_phone_number, sales_rep_email)" + "VALUES (?, ?, ?, ?, ?);";
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, salesRep.getSales_rep_id());
-			ps.setString(2, salesRep.getSales_rep_first_name());
-			ps.setString(3, salesRep.getSales_rep_last_name());
-			ps.setString(4, salesRep.getSales_rep_phone_number());
-			ps.setString(5, salesRep.getSales_rep_email());
+			ps.setInt(1, salesRep.sales_rep_id());
+			ps.setString(2, salesRep.sales_rep_first_name());
+			ps.setString(3, salesRep.sales_rep_last_name());
+			ps.setString(4, salesRep.sales_rep_phone_number());
+			ps.setString(5, salesRep.sales_rep_email());
 			ps.executeUpdate();
-			System.out.println("New sales rep: " + salesRep.getSales_rep_first_name() + " added!");
+			System.out.println("New sales rep: " + salesRep.sales_rep_first_name() + " added!");
 			log.info("User added sales rep");
 		} catch (SQLException e) {
 			System.out.println("New sales rep not added.");

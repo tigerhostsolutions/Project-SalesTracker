@@ -12,7 +12,8 @@ public class ConnectionUtil {
 				System.out.println("Class wasn't found.");
 				e.printStackTrace();
 			}
-			String url = "jdbc:postgresql://localhost:5432/postgres";
+//			String url = "jdbc:postgresql://localhost:5432/postgres";
+			String url = "jdbc:postgresql://mytigerhostx-1.cdmgpvquhqgx.us-east-2.rds.amazonaws.com/";
 			String username = "postgres";
 			String password = "password";
 			return DriverManager.getConnection(url, username, password);

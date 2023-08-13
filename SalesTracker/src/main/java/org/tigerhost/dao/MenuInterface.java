@@ -2,7 +2,7 @@ package org.tigerhost.dao;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tigerhost.Menu;
+import org.tigerhost.model.Menu;
 
 import java.util.Scanner;
 

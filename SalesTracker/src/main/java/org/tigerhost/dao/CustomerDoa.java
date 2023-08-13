@@ -40,17 +40,18 @@ public class CustomerDoa implements DoaInterface<Customer> {
 	public void add(Customer customer) {
 		try (Connection conn = ConnectionUtil.getConnection()) {
 			String sql = "INSERT INTO customers (ctr_number, ctr_first_name, ctr_last_name, "
-					+ "ctr_phone_number, ctr_email, ctr_current_balance, sales_rep_id)" + "VALUES (?, ?, ?, ?, ?, ?, ?);";
+					+ "ctr_phone_number, ctr_email, ctr_current_balance, sales_rep_id)" +
+						 "VALUES (?, ?, ?, ?, ?, ?, ?);";
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, customer.getCtr_number());
-			ps.setString(2, customer.getCtr_first_name());
-			ps.setString(3, customer.getCtr_last_name());
-			ps.setString(4, customer.getCtr_phone_number());
-			ps.setString(5, customer.getCtr_email());
-			ps.setDouble(6, customer.getCtr_current_balance());
-			ps.setInt(7, customer.getSales_rep_id());
+			ps.setInt(1, customer.ctr_number());
+			ps.setString(2, customer.ctr_first_name());
+			ps.setString(3, customer.ctr_last_name());
+			ps.setString(4, customer.ctr_phone_number());
+			ps.setString(5, customer.ctr_email());
+			ps.setDouble(6, customer.ctr_current_balance());
+			ps.setInt(7, customer.sales_rep_id());
 			ps.executeUpdate();
-			System.out.println("Success: New customer: " + customer.getCtr_first_name() + " added to the database!");
+			System.out.println("Success: New customer: " + customer.ctr_first_name() + " added to the database!");
 			log.info("User added customer");
 		} catch (SQLException e) {
 			System.out.println("New customer not added.");
