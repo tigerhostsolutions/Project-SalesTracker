@@ -1,0 +1,3 @@
+INSERT INTO sales_tracker.sales_representatives (sales_rep_id, sales_rep_first_name, sales_rep_last_name, sales_rep_phone_number, sales_rep_email) VALUES (10, 'Brian', 'Byrd', '15862221111', 'bbyrd@myail.com');
+INSERT INTO sales_tracker.sales_representatives (sales_rep_id, sales_rep_first_name, sales_rep_last_name, sales_rep_phone_number, sales_rep_email) VALUES (11, 'Sherry', 'Smith', '15862220000', 'ssmith4@mymail.com');
+INSERT INTO sales_tracker.sales_representatives (sales_rep_id, sales_rep_first_name, sales_rep_last_name, sales_rep_phone_number, sales_rep_email) VALUES (1215, 'Jeremy', 'Thomas', '8884447523', 'jthomas@mymail.com');

@@ -1,0 +1,4 @@
+INSERT INTO sales_tracker.customers (ctr_number, ctr_first_name, ctr_last_name, ctr_phone_number, ctr_email, ctr_current_balance, sales_rep_id) VALUES (1020, 'Jonte', 'Grasty', '13135555555', 'jgrasty@mail.com', 99.98, 10);
+INSERT INTO sales_tracker.customers (ctr_number, ctr_first_name, ctr_last_name, ctr_phone_number, ctr_email, ctr_current_balance, sales_rep_id) VALUES (1010, 'Dom', 'Davis', '12483333333', 'ddavis@mail.com', 48.74, 10);
+INSERT INTO sales_tracker.customers (ctr_number, ctr_first_name, ctr_last_name, ctr_phone_number, ctr_email, ctr_current_balance, sales_rep_id) VALUES (1030, 'Joe', 'Gray', '13135555555', 'jgray@mail.com', 1000.5, 11);
+INSERT INTO sales_tracker.customers (ctr_number, ctr_first_name, ctr_last_name, ctr_phone_number, ctr_email, ctr_current_balance, sales_rep_id) VALUES (999900, 'Beb', 'Smith', '13135550001', 'bsmith@mail.com', 75.85, 11);
