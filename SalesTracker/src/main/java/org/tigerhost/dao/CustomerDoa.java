@@ -29,7 +29,7 @@ public class CustomerDoa implements DoaInterface<Customer> {
 			} // end while
 			log.info("User viewed 'Customer' list");
 			return customerList;
-		} catch (SQLException e) { // if something goes wrong accessing our data, it will get caught
+		} catch (SQLException e) {
 			System.out.println("Something went wrong when trying to access your DB");
 			e.printStackTrace();
 		}//end try-catch

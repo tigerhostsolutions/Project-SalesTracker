@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionUtil {
+	private ConnectionUtil() {
+//		Utility classes should not have public constructors.
+	}
 		public static Connection getConnection() throws SQLException {
 			try {
 				Class.forName("org.postgresql.Driver");
@@ -12,10 +15,14 @@ public class ConnectionUtil {
 				System.out.println("Class wasn't found.");
 				e.printStackTrace();
 			}
-//			String url = "jdbc:postgresql://localhost:5432/postgres";
-			String url = "jdbc:postgresql://mytigerhostx-1.cdmgpvquhqgx.us-east-2.rds.amazonaws.com/";
+
+			//Hard-coded credentials - Poor practice, consider hibernate or placing in external file.
+			//Connect to localhost and specific schema
+//			String url = "jdbc:postgresql://localhost:5432/postgres?currentSchema=sales_tracker";
+			String url = "jdbc:postgresql://mytigerhostx-postgresql.cdmgpvquhqgx.us-east-2.rds.amazonaws.com/"; //Connect to AWS RDS
 			String username = "postgres";
 			String password = "password";
+
 			return DriverManager.getConnection(url, username, password);
 		}// end getConnection()
 }// end ConnectionUtil

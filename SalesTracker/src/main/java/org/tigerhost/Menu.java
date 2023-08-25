@@ -234,9 +234,9 @@ public class Menu implements MenuInterface {
         List<Product> products = productDoa.listAll();
         for (Product p : products) {
             System.out.println(
-                    "Product#: " + p.getProduct_number() + ", Product: " + p.getProduct_name()
-                    + ", Description: " + p.getProduct_description() + ", Category: "
-                    + p.getProduct_category() + ", Price: " + p.getProduct_price());
+                    "Product#: " + p.product_number() + ", Product: " + p.product_name()
+                    + ", Description: " + p.product_description() + ", Category: "
+                    + p.product_category() + ", Price: " + p.product_price());
         }
     }//getProducts()
 
@@ -244,9 +244,9 @@ public class Menu implements MenuInterface {
         List<Customer> customers = customerDoa.listAll();
         for (Customer c : customers) {
             System.out.println(
-                    "Customer#: " + c.getCtr_number() + ", Customer: " + c.getCtr_first_name() + " "
-                    + c.getCtr_last_name() + ", Phone: " + c.getCtr_phone_number() + ", Email: " + c.getCtr_email()
-                    + ", Balance: " + c.getCtr_current_balance());
+                    "Customer#: " + c.ctr_number() + ", Customer: " + c.ctr_first_name() + " "
+                    + c.ctr_last_name() + ", Phone: " + c.ctr_phone_number() + ", Email: " + c.ctr_email()
+                    + ", Balance: " + c.ctr_current_balance());
         }
     }//end getCustomers()
 
@@ -254,9 +254,9 @@ public class Menu implements MenuInterface {
         List<SalesRep> salesReps = salesRepDoa.listAll();
         for (SalesRep sr : salesReps) {
             System.out.println(
-                    "Rep Id#: " + sr.getSales_rep_id() + ", " + "Rep: " + sr.getSales_rep_first_name() + " "
-                    + sr.getSales_rep_last_name() + ", " + "Phone: " + sr.getSales_rep_phone_number() + ", "
-                    + "Email: " + sr.getSales_rep_email());
+                    "Rep Id#: " + sr.sales_rep_id() + ", " + "Rep: " + sr.sales_rep_first_name() + " "
+                    + sr.sales_rep_last_name() + ", " + "Phone: " + sr.sales_rep_phone_number() + ", "
+                    + "Email: " + sr.sales_rep_email());
         }
     }//end getSalesRep()
 }// end Class
