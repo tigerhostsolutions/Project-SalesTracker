@@ -16,12 +16,12 @@ public class ConnectionUtil {
 				e.printStackTrace();
 			}
 
-			//Hard-coded credentials - Poor practice, consider hibernate or placing in external file.
-			//Connect to localhost and specific schema
+			//Hard-coded credentials - url connects to localhost and database schema.
 //			String url = "jdbc:postgresql://localhost:5432/postgres?currentSchema=sales_tracker";
-			String url = "jdbc:postgresql://mytigerhostx-postgresql.cdmgpvquhqgx.us-east-2.rds.amazonaws.com/"; //Connect to AWS RDS
-			String username = "postgres";
-			String password = "password";
+			//Use environment variables to access url, username, and password.
+			String url = System.getenv("DB_URL_AWS");
+			String username = System.getenv("DB_USERNAME");
+			String password = System.getenv("DB_PASSWORD");
 
 			return DriverManager.getConnection(url, username, password);
 		}// end getConnection()
