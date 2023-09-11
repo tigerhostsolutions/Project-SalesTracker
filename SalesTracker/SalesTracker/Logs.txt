@@ -1,0 +1,18 @@
+2023-08-11 14:00:09 INFO  Menu:25 - User viewed sales rep list
+2023-08-11 14:00:15 INFO  Menu:30 - User viewed customer list
+2023-08-11 14:00:19 INFO  Menu:25 - User viewed sales rep list
+2023-08-12 00:41:20 INFO  Menu:24 - User viewed 'Product' list
+2023-08-12 00:58:10 INFO  Menu:24 - User viewed 'Product' list
+2023-08-12 00:58:14 INFO  Menu:30 - User viewed 'Customer' list
+2023-08-12 00:58:20 INFO  Menu:25 - User viewed 'Sales Rep' list
+2023-08-12 01:31:51 INFO  Menu:24 - User viewed 'Product' list
+2023-08-12 01:31:53 INFO  Menu:30 - User viewed 'Customer' list
+2023-08-12 01:31:55 INFO  Menu:25 - User viewed 'Sales Rep' list
+2023-08-13 05:48:49 INFO  Menu:30 - User viewed 'Customer' list
+2023-08-13 05:49:03 WARN  Menu:35 - User is attempting to delete product
+2023-08-13 05:49:03 INFO  Menu:24 - User viewed 'Product' list
+2023-08-13 15:33:40 INFO  Menu:30 - User viewed 'Customer' list
+2023-08-13 16:53:53 INFO  Menu:24 - User viewed 'Product' list
+2023-08-13 17:54:42 INFO  Menu:30 - User viewed 'Customer' list
+2023-08-13 17:54:58 INFO  Menu:24 - User viewed 'Product' list
+2023-08-13 17:55:13 INFO  Menu:25 - User viewed 'Sales Rep' list
